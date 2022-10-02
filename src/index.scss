@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-family: "Lato", sans-serif, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.btn {
+  width: 100%;
+  height: 48px;
+  padding: 14px 15px;
+  margin-top: 32px;
+  border-radius: 4px;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: #4d61fc;
+  color: #fff;
+  border: none;
+  font: normal normal 16px/1.25 Lato, sans-serif;
+  cursor: pointer;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.card {
+  width: 548px;
+  border-radius: 8px;
+  padding: 54px 64px 48px;
+  background-color: #fff;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.hidden {
+  visibility: hidden;
+}

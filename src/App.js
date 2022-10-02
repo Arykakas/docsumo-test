@@ -1,24 +1,32 @@
-import logo from "./logo.svg";
-import "./App.css";
+import React, { useEffect } from "react";
+import "./App.scss";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import LoginApp from "./components/LoginApp";
+import Logo from "./assets/docsumo-logo.png";
+import Success from "./components/Success";
 
 function App() {
+  useEffect(() => {
+    document.title = "Docsumo Test";
+  });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          React boilerplate
-        </a>
-      </header>
-    </div>
+    <Router>
+      <main className="app-container">
+        <section className="app-content">
+          <div className="content">
+            <header>
+              <img src={Logo} alt="docsumo" />
+            </header>
+            <article className="login-app-container">
+              <Routes>
+                <Route path="/" element={<LoginApp />} />
+                <Route path="/success" element={<Success />} />
+              </Routes>
+            </article>
+          </div>
+        </section>
+      </main>
+    </Router>
   );
 }
 

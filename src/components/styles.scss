@@ -1,0 +1,69 @@
+.card {
+  h1 {
+    color: #181818;
+    margin-top: 0;
+    margin-bottom: 7px;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .error-text {
+    min-height: 28px;
+    color: #c70011;
+    padding: 7px 12px;
+    border-radius: 4px;
+    background: #fff2f2;
+    margin-bottom: 7px;
+    box-sizing: border-box;
+    border: 1px solid #c70011;
+    font: normal normal 12px/1.16 Lato, sans-serif;
+  }
+}
+
+.login-form {
+  label {
+    display: block;
+    font-size: 14px;
+    line-height: 1.2;
+    margin-bottom: 6px;
+    color: rgba(24, 24, 24, 0.8);
+  }
+
+  .password {
+    margin-top: 28px;
+  }
+
+  input {
+    width: 100%;
+    height: 40px;
+    outline: none;
+    padding: 11px 14px;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid #a3adce;
+  }
+
+  .fg-pass {
+    text-align: right;
+    color: #000;
+    margin: 8px 0 0 0;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .no-account {
+    width: 100%;
+    margin-top: 16px;
+    text-align: center;
+    font: normal normal 18px Lato, sans-serif;
+    a {
+      margin-left: 6px;
+      color: #344bfc;
+      font-size: inherit;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}
